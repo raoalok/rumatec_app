@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Rumatec App",
-    "slug": "Rumatec_App",
+    "name": "Rumatec Sales App",
+    "slug": "rumatec_sale_management_App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
