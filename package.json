@@ -21,6 +21,11 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
+  "eslintConfig": {
+    "extends": [
+      "wesbos"
+    ]
+  },
   "dependencies": {
     "@react-native-community/netinfo": "8.2.0",
     "@react-navigation/native": "^6.0.10",
@@ -36,16 +41,19 @@
     "react-hook-form": "^7.33.0",
     "react-native": "0.68.2",
     "react-native-elements": "^3.4.2",
-    "react-native-gesture-handler": "^2.5.0",
+    "react-native-gesture-handler": "~2.2.1",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-paper": "^4.12.2",
-    "react-native-safe-area-context": "^4.3.1",
-    "react-native-screens": "^3.13.1",
+    "react-native-safe-area-context": "4.2.4",
+    "react-native-screens": "~3.11.1",
     "react-native-web": "0.17.7",
     "react-redux": "^8.0.2",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "eslint": "^8.5.0",
+    "prettier": "^2.3.2"
   }
 }
