@@ -2,29 +2,47 @@ import * as React from 'react'
 import {
   StyleSheet,
   SafeAreaView,
-  Alert,
-  Image,
   Keyboard,
   KeyboardAvoidingView,
   TextInput,
   TouchableWithoutFeedback,
-  Pressable,
   View,
-  TouchableOpacity,
-  // Text,
-  // Button
 } from 'react-native'
-import { Surface, Text, Button } from 'react-native-paper'
+import { Text, Button } from 'react-native-paper'
 import { useForm, Controller } from 'react-hook-form'
+import Api from '../../Api';
+import { login } from '../../redux/actions';
+import { useSelector } from 'react-redux';
 
 const Login = () => {
+
+  const auth = useSelector(state => state.auth);
+
+
   const {
     control,
     handleSubmit,
     formState: { errors, isValid },
-  } = useForm({ mode: 'onBlur' })
+  } = useForm({ mode: 'onBlur' });
 
-  const onSubmit = data => console.log(data)
+  React.useEffect(() => {
+    if (auth.type && auth.user) {
+      navigate('/');
+    }
+  }, [auth]);
+
+  const onSubmit = async formValues => {
+    try {
+      console.log(formValues);
+      await dispatch(login(formValues)).then(() => {
+        navigate('/');
+      });
+    } catch (err) {
+      errorNotification(err);
+    }
+  };
+
+
 
   return (
     <SafeAreaView>

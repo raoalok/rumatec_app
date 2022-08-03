@@ -1,4 +1,4 @@
-export const auth = (state = { type: false, user: null }, action) => {
+export const auth = (state = { type: false, user: null }, action = {}) => {
   if (action.type === 'FETCH_TOKEN') {
     return action.payload;
   }
