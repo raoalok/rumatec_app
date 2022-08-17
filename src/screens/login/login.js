@@ -11,38 +11,32 @@ import {
 import { Text, Button } from 'react-native-paper'
 import { useForm, Controller } from 'react-hook-form'
 import Api from '../../Api';
-import { login } from '../../redux/actions';
-import { useSelector } from 'react-redux';
+import { login } from '../../redux/actions'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Login = () => {
+  const dispatch = useDispatch();
 
-  const auth = useSelector(state => state.auth);
+  const auth = useSelector(state => state.auth)
 
-
-  const {
-    control,
-    handleSubmit,
-    formState: { errors, isValid },
-  } = useForm({ mode: 'onBlur' });
+  const { control, handleSubmit, errors, reset } = useForm()
 
   React.useEffect(() => {
     if (auth.type && auth.user) {
-      navigate('/');
+      navigate('/')
     }
-  }, [auth]);
+  }, [auth])
 
   const onSubmit = async formValues => {
     try {
-      console.log(formValues);
+      console.log(formValues)
       await dispatch(login(formValues)).then(() => {
-        navigate('/');
-      });
+        navigate('/')
+      })
     } catch (err) {
-      errorNotification(err);
+      console.log(err);
     }
-  };
-
-
+  }
 
   return (
     <SafeAreaView>
@@ -51,22 +45,39 @@ const Login = () => {
           <View style={styles.loginScreenContainer}>
             <View style={styles.loginFormView}>
               <Text style={styles.logoText}>Rumatec Vetcare</Text>
-              <TextInput
-                placeholder="Email"
-                placeholderColor="#c4c3cb"
-                style={styles.loginFormTextInput}
+              <Controller
+                control={control}
+                name="email"
+                render={({ field: { onChange, onBlur, value } }) => (
+                  <TextInput
+                    onBlur={onBlur}
+                    onChangeText={onChange}
+                    value={value}
+                    placeholder="Email"
+                    placeholderColor="#c4c3cb"
+                    style={styles.loginFormTextInput}
+                  />
+                )}
               />
-              <TextInput
-                placeholder="Password"
-                placeholderColor="#c4c3cb"
-                style={styles.loginFormTextInput}
-                secureTextEntry={true}
+              <Controller
+                control={control}
+                name="password"
+                render={({ field: { onChange, onBlur, value } }) => (
+                  <TextInput
+                    onBlur={onBlur}
+                    onChangeText={onChange}
+                    value={value}
+                    placeholder="Password"
+                    placeholderColor="#c4c3cb"
+                    style={styles.loginFormTextInput}
+                  />
+                )}
               />
-              <Button
+              <Button title="Submit"
                 mode="contained"
                 style={styles.loginButton}
-                onPress={() => onSubmit()}>
-                Login
+                onPress={handleSubmit(onSubmit)}>
+                login
               </Button>
             </View>
           </View>
