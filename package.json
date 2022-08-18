@@ -1,6 +1,6 @@
 {
   "name": "rumatec_app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mobile Application",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
@@ -21,15 +21,11 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "wesbos"
-    ]
-  },
   "dependencies": {
+    "axios": "^0.27.2",
     "@react-native-community/netinfo": "8.2.0",
     "@react-navigation/native": "^6.0.10",
-    "expo": "~45.0.6",
+    "expo": "^46.0.0",
     "expo-calendar": "~10.2.0",
     "expo-cellular": "~4.2.0",
     "expo-location": "~14.2.2",
@@ -52,8 +48,8 @@
     "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "eslint": "^8.5.0",
-    "prettier": "^2.3.2"
+    "@babel/core": "^7.18.10",
+    "eslint": "^8.21.0",
+    "prettier": "^2.7.1"
   }
 }
