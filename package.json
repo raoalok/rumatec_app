@@ -22,8 +22,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/netinfo": "^9.3.0",
-    "@react-navigation/native": "^6.0.11",
+    "@react-native-community/netinfo": "^8.0.0",
+    "@react-navigation/native": "^6.0.8",
     "axios": "^0.27.2",
     "expo": "^46.0.8",
     "expo-calendar": "^10.3.0",
@@ -32,24 +32,41 @@
     "expo-network": "^4.3.0",
     "expo-sensors": "^11.4.0",
     "expo-status-bar": "^1.4.0",
+    "react": "18.0.0",
+    "react-dom": "^18.0.0",
     "react-hook-form": "^7.34.2",
-    "react-native": "^0.69.4",
+    "react-native": "^0.69.0",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^2.5.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-paper": "^4.12.4",
     "react-native-safe-area-context": "^4.3.1",
-    "react-native-screens": "~3.15.0",
+    "react-native-screens": "^3.14.1",
     "react-native-web": "^0.18.7",
     "react-redux": "^8.0.2",
     "redux": "^4.2.0",
-    "redux-thunk": "^2.4.1",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@rnx-kit/dep-check": "^1.13.0",
     "eslint": "^8.21.0",
     "prettier": "^2.7.1"
+  },
+  "rnx-kit": {
+    "reactNativeVersion": "^0.69",
+    "kitType": "app",
+    "capabilities": [
+      "core",
+      "core-android",
+      "core-ios",
+      "gestures",
+      "navigation/native",
+      "netinfo",
+      "react",
+      "react-dom",
+      "safe-area",
+      "screens"
+    ]
   }
 }

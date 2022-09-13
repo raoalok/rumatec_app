@@ -1,18 +1,18 @@
-import * as React from 'react'
+import React from 'react';
 import {
+  View,
   StyleSheet,
   SafeAreaView,
   Keyboard,
   KeyboardAvoidingView,
   TextInput,
   TouchableWithoutFeedback,
-  View,
-} from 'react-native'
-import { Text, Button } from 'react-native-paper'
-import { useForm, Controller } from 'react-hook-form'
+} from 'react-native';
+import { Text, Button } from 'react-native-paper';
+import { useForm, Controller } from 'react-hook-form';
 import Api from '../../Api';
-import { login } from '../../redux/actions'
-import { useDispatch, useSelector } from 'react-redux'
+import { login } from '../../redux/actions';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Login = () => {
   const dispatch = useDispatch();
