@@ -35,7 +35,7 @@
     <!-- ============================================ -->
     <!-- NEUTRAL COLORS (Grayscale)                   -->
     <!-- ============================================ -->
-    <color name="black">#000000</color>
+    <color name="black">#000000</color>            <!-- Fully Transparent Black -->
     <color name="white">#FFFFFF</color>
     <color name="gray_dark">#4D4D4D</color>
     <color name="gray">#BEBABA</color>
