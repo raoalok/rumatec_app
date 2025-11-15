@@ -68,14 +68,6 @@
     <style name="MyBottomNavigationView" parent="AppBottomNavigationView" />
 
     <!-- ============================================ -->
-    <!-- UTILITY COLORS (INLINE)                      -->
-    <!-- ============================================ -->
-    <color name="system_red">#F44336</color>
-    <color name="grey">#BEBABA</color>
-    <color name="transparent">#00000000</color>
-    <color name="transparent_60">#4A000000</color>
-
-    <!-- ============================================ -->
     <!-- FULLSCREEN THEME OVERLAY                     -->
     <!-- ============================================ -->
     <style name="ThemeOverlay.RumatecVetcare.FullscreenContainer" parent="">
