@@ -5,6 +5,36 @@ This document describes the task for making the **user interface consistent** ac
 
 ---
 
+## Branding Update Task
+Before proceeding with UI consistency work, ensure all legacy branding references are updated:
+
+**Find and replace the following references:**
+- `panav_biotech` → `rumatec_vetcare`
+- `panav` → `rumatec`
+- `biotech` → `vetcare`
+
+**Search locations:**
+- All source code files (`.kt`, `.java`)
+- Resource files (`strings.xml`, `colors.xml`, etc.)
+- Package names and directory structures
+- Asset files and drawable resources
+- Configuration files (`build.gradle`, `AndroidManifest.xml`)
+- Documentation and comments
+
+**Helpful commands:**
+```bash
+# Search for panav_biotech references
+rg "panav_biotech" -g '!**/build/**'
+
+# Search for panav references
+rg "panav" -i -g '!**/build/**'
+
+# Search for biotech references
+rg "biotech" -i -g '!**/build/**'
+```
+
+---
+
 ## Goal
 Review the codebase and refactor UI styles/components so the entire application has a single, consistent appearance and consistent interaction patterns. No feature changes unless strictly necessary to enable consistent UI behavior.
 
