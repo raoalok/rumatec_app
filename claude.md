@@ -161,6 +161,7 @@ Each of the items below must be satisfied before the task is considered done:
 ## Notes & Constraints
 - Avoid changing app behavior or business logic. If a functional change is required to enable consistent UI (rare), document it clearly and isolate it in its own small commit with explanatory notes.
 - If the app mixes View system and Jetpack Compose heavily, prioritize centralizing tokens in whichever system is used for most screens. Provide a short migration note for the other system.
+- **Important:** Any new folders created during this task (e.g., `design/`, `screenshots/`, etc.) should be placed inside `android_app` to maintain proper project structure.
 
 ---
 
