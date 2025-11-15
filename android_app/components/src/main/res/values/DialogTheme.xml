@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="AppDialogTheme" parent="Theme.AppCompat.Light">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">#40000000</item><!--dialog background-->
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+</style>
+
+    </resources>

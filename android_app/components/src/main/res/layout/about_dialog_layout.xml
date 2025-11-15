@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background4">
+
+
+    <include layout="@layout/settings_dialog_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="MyApp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Version Info -->
+        <TextView
+            android:id="@+id/version_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version: 1.2.0"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Release Date -->
+        <TextView
+            android:id="@+id/release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Date: June 22, 2025"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Release Notes Header -->
+        <TextView
+            android:id="@+id/release_notes_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Notes:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Release Notes (Bulleted list using bullets manually) -->
+        <TextView
+            android:id="@+id/release_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Improved login speed\n• Added dark mode support\n• Fixed crash on startup\n• Updated privacy policy"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+<!--
+    <include
+        layout="@layout/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+-->
+<!--
+    <FrameLayout
+        android:id="@+id/popupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/item_stock_spinner"
+                    style="@style/item_stock_spinner_style"
+                    android:spinnerMode="dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/item_doctor_name_spinner"
+                style="@style/item_stock_spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="0dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="true"
+                style="@style/TextInputFieldStyle"
+                app:hintTextColor="@color/black">
+                <!--style="@style/TextInputFieldStyle"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inventory_handed_over_name"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:minWidth="300dp"
+                    android:hint="Handed to .."
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_stock_delivery_spinner" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="true"
+                style="@style/TextInputFieldStyle"
+                app:hintTextColor="@color/black">
+<!--style="@style/TextInputFieldStyle"-->
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_item_stock"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:digits="0123456789"
+                    android:inputType="numberDecimal"
+                    android:minWidth="300dp"
+                    android:hint="Quantity"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/inventory_handed_over_name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/TextInputFieldStyleOutLine"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:defaultFocusHighlightEnabled="false"
+                android:hint="Client"
+                android:visibility="gone"
+                app:hintEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_item_stock_client"
+                    style="@style/TextInputFieldStyleOutLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_item_stock" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_item_stock_reason"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:hint="Remark..."
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="10"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_item_stock_reason" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submit_updated_inventory"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/grey"
+                android:backgroundTintMode="screen"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

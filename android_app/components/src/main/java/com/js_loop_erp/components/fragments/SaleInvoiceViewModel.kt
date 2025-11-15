@@ -1,0 +1,42 @@
+package com.js_loop_erp.components.fragments
+
+data class SaleInvoiceViewModel(
+    val id: Int? = 0,
+    val saleNo: String? = "",
+    val saleYear: String? = "",
+    val saleDate: String? = "",
+    val fromcnfId: Int? = 0,
+    val toPartyId: Int? = 0,
+    val total: String? = "",
+    val transport: String? = "",
+    val dispatchNo: String? = "",
+    val deliveryTerms: String? = "",
+    val remark: String? = "",
+    val createdAt: String? = "",
+    val updatedAt: String? = "",
+    val isDeleted: Boolean? = false,
+    val createdBy: String? = "",
+    val updatedBy: String? = "",
+    val productValue: String? = "",
+    val productSchemeValue: String? = "",
+    val productValueAfterScheme: String? = "",
+    val productDiscountValue: String? = "",
+    val productValueAfterDiscount: String? = "",
+    val productTaxValue: String? = "",
+    val productTotal: String? = "",
+    val chargeValue: String? = "",
+    val chargeDiscountValue: String? = "",
+    val chargeValueAfterDiscount: String? = "",
+    val chargeTaxValue: String? = "",
+    val chargeTotal: String? = "",
+    val deletedAt: String? = null,
+    val deletedBy: String? = null,
+    val dispatchDate: String? = "",
+    val payment: String? = null,
+    val party: String? = "",
+    val cnf: String? = "",
+    val files: String? = null,
+    val products: String? = ""
+){
+
+}

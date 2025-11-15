@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<!--    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.js_loop_enterprise_solutions.panav_biotech_erp.fragments.TripPlanFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/notifications_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.js_loop_enterprise_solutions.panav_biotech_erp.fragments.tripTourPlan.TripPlanFormFragmnet"
+        android:label="@string/title_clients"
+        tools:layout="@layout/client_fragment" />-->
+
+</navigation>

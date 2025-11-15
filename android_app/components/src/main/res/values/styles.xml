@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">#FFFFFF</item><!--dialog background-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:titleTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/panav_biotech_green</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DialogThemeNoTitle" parent="Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">#FFFFFF</item><!--dialog background-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:titleTextColor">@color/white</item>
+        <item name="android:statusBarColor">@color/panav_biotech_green</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="AlertDialogThemeNoTitle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <item name="buttonBarPositiveButtonStyle">@style/AlertDialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertDialogButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AlertDialogButtonStyle</item>
+    </style>
+
+    <style name="AlertDialogButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/green_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/close_button_background</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="DialogGrey" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">#B54E4E</item><!--dialog background-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:titleTextColor">#816C6C</item>
+        <item name="android:statusBarColor">@color/panav_biotech_green</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DialogGreyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">#FFFFFF</item><!--dialog background-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTitleBackgroundStyle">@style/DialogGreyThemeBackground</item>
+        <item name="android:windowTitleStyle">@style/DialogGreyThemeText</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+
+    <style name="ChildDialogGreyTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">#FFFFFF</item><!--dialog background-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTitleBackgroundStyle">@style/DialogGreyThemeBackground</item>
+        <item name="android:windowTitleStyle">@style/DialogGreyThemeText</item>
+    </style>
+
+    <style name="DialogGreyThemeBackground">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="DialogGreyThemeText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyTimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/panav_biotech_green</item>
+        <item name="colorAccent">@color/panav_biotech_green</item>
+    </style>
+
+    <style name="MyCustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="item_stock_spinner_style" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+
+    <style name="attendance_create_spinner_style" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+    <style name="trip_plan_create_spinner_style" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+
+    <style name="leave_create_spinner_style" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+
+    <style name="edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_text</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+    <style name="spinner_inventory_item_list_text" parent="@android:style/Widget.TextView.SpinnerItem">
+        >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginStart">20sp</item>
+    </style>
+
+    <style name="RoundedTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/tabs_selector</item>
+        <item name="tabIndicator">@null</item>
+        <item name="android:background">@drawable/background1</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@color/black</item>
+    </style>
+
+    <style name="RoundedTabLayoutStyleInventory" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/tabs_selector_inventory</item>
+        <item name="tabIndicator">@null</item>
+        <item name="android:background">@drawable/tab_layout_bg_inventory</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">#FFD4D6DA</item>
+    </style>
+
+    <style name="TextInputFieldStyleOutLine" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="background">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorAccent">@color/cardview_dark_background</item>
+        <item name="android:textColorHighlight">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="TextInputFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">@color/grey</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorAccent">@color/cardview_dark_background</item>
+        <item name="android:textColorHighlight">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in_custom</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_custom</item>
+    </style>
+
+    <style name="CustomCalenderItemStyle" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:titleMarginTop">200sp</item>
+        <item name="android:titleMarginEnd">20sp</item>
+        <item name="android:titleMarginStart">20sp</item>
+        <item name="itemBackground">@drawable/border_shape</item>
+    </style>
+
+    <style name="CustomMenuItemStyle" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">50dp</item>
+        <item name="android:titleMarginTop">200sp</item>
+        <item name="android:titleMarginEnd">20sp</item>
+        <item name="android:titleMarginStart">20sp</item>
+        <item name="android:itemPadding">10dp</item>
+        <item name="itemBackground">@drawable/border_shape</item>
+    </style>
+
+
+    <style name="CustomTextViewStyle" parent="Widget.Design.NavigationView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/border_shape_blanl_menu_item</item>
+        <item name="android:layout_marginTop">200dp</item>
+    </style>
+
+
+    <declare-styleable name="VerticalProgressBar">
+        <attr name="barWidth" format="dimension" />
+        <attr name="barHeight" format="dimension" />
+        <attr name="stepCount" format="integer" />
+        <attr name="currentStep" format="integer" />
+    </declare-styleable>
+
+    <style name="TransparentBackground" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">#00000000</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.Theme.PanavBiotech.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="go_to_login_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/green_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+
+    android:textColorHighlight="@color/black"
+    android:textColorHint="@color/black"
+
+
+</resources>
+

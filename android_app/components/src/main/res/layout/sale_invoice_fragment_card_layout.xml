@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="20dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/sale_invoice_fragment_product_sale_no"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_weight="0.7"
+                                android:baselineAligned="false"
+                                android:ellipsize="end"
+                                android:maxLength="400"
+                                android:maxLines="4"
+                                android:text="Sale: BE/19/23-24/625BE/19/23-24/625 "
+                                android:textColor="#000000"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+
+
+                            <TextView
+                                android:id="@+id/sale_invoice_fragment_product_date"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:maxLength="10"
+                                android:text="26 Apr"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sale_invoice_fragment_product_party"
+                            android:text="Party: Gayatri  Drug Distributors Gayatri  Drug Distributors Gayatri  Drug Distributors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:maxLines="3"
+                            android:maxLength="400"
+                            android:ellipsize="end"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+<!--                        <TextView
+                            android:id="@+id/sale_invoice_fragment_product_batch_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="6dp"
+                            android:text="$: R-284"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />-->
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sale_invoice_fragment_product_cnf"
+                    android:text="Calgain Plus Gel (300ml)ssssssssssffffffffffffffffffffffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:maxLines="4"
+                    android:maxLength="400"
+                    android:textSize="16sp"
+                    android:ellipsize="end" />
+
+                    <TextView
+                        android:id="@+id/sale_invoice_fragment_product_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$: 23099090"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/sale_invoice_fragment_product_download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/download_invoice"
+                            android:background="@drawable/download_drawable"
+                            android:layout_alignParentEnd="true"
+                            android:text="Del"/>
+
+                </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+

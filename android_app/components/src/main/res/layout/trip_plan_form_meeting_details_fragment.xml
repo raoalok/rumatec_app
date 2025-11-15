@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/background1"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel Route"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:autofillHints="Trip Route"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/trip_plan_place_type"
+                    style="@style/trip_plan_create_spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background4">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel Start"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="20dp"
+                android:visibility="visible"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:visibility="visible"
+                android:autofillHints="Travel Start"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/trip_plan_place_from"
+                    style="@style/trip_plan_create_spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:autofillHints="Travel Start"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background4">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Travel End"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="20dp"
+                android:visibility="visible"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:visibility="visible"
+                android:autofillHints="Trip End"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/trip_plan_place_to"
+                    style="@style/trip_plan_create_spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/background4">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Travel Mode"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Travel Mode"
+                android:visibility="visible"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/trip_plan_travel_mode"
+                    style="@style/trip_plan_create_spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <!--            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="true"
+                style="@style/TextInputFieldStyle"
+                app:hintTextColor="@color/black">
+                &lt;!&ndash;style="@style/TextInputFieldStyle"&ndash;&gt;
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inventory_handed_over_name"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:minWidth="300dp"
+                    android:hint="Handed to .."
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_stock_delivery_spinner" />
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <!--            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="true"
+                style="@style/TextInputFieldStyle"
+                app:hintTextColor="@color/black">
+                &lt;!&ndash;style="@style/TextInputFieldStyle"&ndash;&gt;
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_item_stock"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:digits="0123456789"
+                    android:inputType="numberDecimal"
+                    android:minWidth="300dp"
+                    android:hint="Quantity"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/inventory_handed_over_name" />
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <!--            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/TextInputFieldStyleOutLine"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:defaultFocusHighlightEnabled="false"
+                android:hint="Client"
+                android:visibility="gone"
+                app:hintEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/id_2"
+                    style="@style/TextInputFieldStyleOutLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_item_stock" />
+
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--            <View
+                            android:layout_width="20dp"
+                            android:layout_height="10dp" />-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trip_plan_update_date"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="--/--/--"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="10dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/trip_plan_update_time_from"
+                        style="@style/edit_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Time From"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/trip_plan_update_time_to"
+                        style="@style/edit_text_style"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Time To"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/trip_plan_travel_activity"
+                    style="@style/trip_plan_create_spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/id_1"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:hint="Remark..."
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="10"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/update_item_stock_reason" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submit_trip_meeting_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/grey"
+                android:backgroundTintMode="screen"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+
+    <!--    <Button
+            android:id="@+id/submit_trip_plan_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/grey"
+            android:backgroundTintMode="screen"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="100dp"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

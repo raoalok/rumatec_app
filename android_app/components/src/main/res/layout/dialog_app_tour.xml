@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="App Tour"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:clipToPadding="false"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+<!--    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        app:tabIndicator="@drawable/tab_indicator_dot"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorFullWidth="false"
+        app:tabBackground="@drawable/tab_dot_selector"
+        app:tabSelectedTextColor="@android:color/transparent"
+        app:tabTextColor="@android:color/transparent"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabPadding="10dp"
+        app:tabMaxWidth="18dp"
+        app:tabMinWidth="18dp" />-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        app:tabIndicator="@drawable/tab_indicator_dot"
+        app:tabIndicatorFullWidth="true"
+        app:tabBackground="@drawable/tab_dot_selector"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@android:color/transparent"
+        app:tabTextColor="@android:color/transparent"
+        app:tabPadding="10dp"
+        app:tabMaxWidth="25dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="Continue to App"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green_dark" />
+
+
+
+
+</LinearLayout>
+

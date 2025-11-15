@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Rumatec Vetcare</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_clients">Client</string>
+    <string name="log_off">LOG OFF</string>
+    <string name="status_online">Status Offline</string>
+    <string name="schedule">Milestone</string>
+    <string name="product_list">Products</string>
+    <string name="sales">Sales</string>
+    <string name="cnf">CNF</string>
+    <string name="expense">Expense</string>
+    <string name="inventory">Inventory</string>
+    <string name="expense_description">Description…</string>
+    <string name="expense_claim_form">Expense Claim Form</string>
+    <string name="expense_amount">Amount..</string>
+    <string name="btn_expense_submit">Submit</string>
+    <string name="nav_close">Close</string>
+    <string name="nav_open">Open</string>
+    <string name="attendance_title">Attendance</string>
+    <string name="leave_title">Leave</string>
+    <string name="trip_plan">Trip Plan</string>
+    <string name="trip_reporting">Reporting</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="sign_in_out">Sign In out</string>
+    <string name="activity">Attendance</string>
+    <string name="approve_leave">Approve Leave</string>
+    <string name="approve_trips">Approve Leave</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="login_status">Login Status</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

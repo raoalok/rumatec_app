@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F7F9FB"
+    android:padding="16dp">
+
+    <!-- Scrollable content above button -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_submit_expense"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/image_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_header_rounded"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/expense_claim_form"
+                android:textAlignment="center"
+                android:textColor="@color/panav_biotech_green"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Expense reason -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_card_rounded"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/expense_reason"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/expense_description"
+                    android:inputType="textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="6"
+                    android:minLines="3"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Expense amount -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_card_rounded"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/expense_amount"
+                    style="@style/TextInputFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/expense_amount"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Image selection -->
+            <LinearLayout
+                android:id="@+id/show_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_rounded"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:background="@drawable/background1">
+
+                    <ImageView
+                        android:id="@+id/show_image_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/grey"
+                        android:src="@drawable/baseline_photo_camera_back_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Images (min 2)"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/user_image_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:src="@drawable/linear_layout_border" />
+
+                <ImageView
+                    android:id="@+id/show_image_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:src="@drawable/baseline_photo_camera_back_24" />
+
+                <ImageView
+                    android:id="@+id/show_image_3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/grey"
+                    android:src="@drawable/baseline_photo_camera_back_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed submit button -->
+    <Button
+        android:id="@+id/btn_submit_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_expense_submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_rounded"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

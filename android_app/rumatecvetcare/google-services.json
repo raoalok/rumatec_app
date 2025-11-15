@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "903988448137",
+    "project_id": "rumatecvetcare-7798e",
+    "storage_bucket": "rumatecvetcare-7798e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903988448137:android:b6a6cf33276554d779ef58",
+        "android_client_info": {
+          "package_name": "com.js_loop_erp.rumatec_vetcare_erp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHnLo7LrgNlHJmbnB3ZSdkOle7nNBaJUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

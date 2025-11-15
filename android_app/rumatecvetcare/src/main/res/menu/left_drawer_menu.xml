@@ -1,0 +1,65 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item
+        android:id="@+id/home_nav_menu"
+        android:title="@string/attendance_title"
+        app:actionLayout="@layout/menu_item_right_aligned"
+        android:textAppearance="@style/CustomMenuItemStyle"/>
+
+    <item
+        android:id="@+id/profile_nav_menu"
+        android:title="@string/leave_title"
+        app:actionLayout="@layout/menu_item_right_aligned"
+        android:textAppearance="@style/CustomMenuItemStyle"/>-->
+
+    <item
+        android:id="@+id/home_nav_menu"
+        android:title="@string/attendance_title"
+        android:textAppearance="@style/CustomMenuItemStyle"
+        app:actionViewClass="android.widget.TextView"/>
+
+    <item
+        android:id="@+id/trip_activity_nav_menu"
+        android:title="@string/activity"
+        app:actionViewClass="android.widget.TextView" />
+
+    <item
+        android:id="@+id/leave_nav_menu"
+        android:title="@string/leave_title"
+        app:actionViewClass="android.widget.TextView" />
+
+    <item
+        android:id="@+id/trip_nav_menu"
+        android:title="@string/trip_plan"
+        app:actionViewClass="android.widget.TextView" />
+
+    <item
+        android:id="@+id/trip_reporting_nav_menu"
+        android:title="@string/trip_reporting"
+        app:actionViewClass="android.widget.TextView" />
+
+
+    <item
+        android:id="@+id/trip_admin_accept_reject"
+        android:title="@string/approve_trips"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/leave_approve_reject"
+        android:title="@string/approve_leave"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/check_user_login_status"
+        android:title="@string/login_status"
+        android:visible="false"/>
+
+
+    <item
+        android:id="@+id/sign_out_system"
+        android:title="@string/sign_out"
+        app:actionViewClass="android.widget.TextView"
+        android:visible="true"/>
+</menu>

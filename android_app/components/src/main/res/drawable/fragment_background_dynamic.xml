@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#A2DDA2"
+                android:endColor="#A1ECA1"
+                android:type="linear"
+                android:angle="90" />
+        </shape>
+    </item>
+    <item
+        android:width="1000dp"
+        android:height="500dp"
+        android:bottom="20dp"
+        android:left="20dp">
+
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+        <path
+            android:fillColor="#A2DDA2"
+            android:strokeColor="#A2DDA2"
+            android:strokeWidth="2"
+            android:pathData="M0,50 C25,0 75,0 100,50 C125,100 125,100 100,150 C75,200 25,200 0,150 Z" />
+            <path/>
+
+        </vector>
+    </item>
+
+    <item
+        android:width="1000dp"
+        android:height="100dp"
+        android:bottom="20dp"
+        android:left="20dp">
+        <vector
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100" >
+            <path
+                android:fillColor="#A2DDA2"
+                android:strokeColor="#A2DDA2"
+                android:strokeWidth="2"
+                android:pathData="M 0,50C 12.5,0 37.5,0 50,50C 62.5,100 87.5,100 100,50"/>
+        </vector>
+    </item>
+
+
+    <!--    <item>
+            <vector
+                android:width="200dp"
+                android:height="100dp"
+                android:viewportWidth="100"
+                android:src="@drawable/hyperbolic_shape"
+                android:viewportHeight="100" >
+                <path
+                    android:fillColor="#B57171"
+                    android:strokeColor="#E38E8E"
+                    android:strokeWidth="2"
+                    android:pathData="M0,50 C25,0 75,0 100,50 C125,100 125,100 100,150 C75,200 25,200 0,150 Z" />
+                <gradient
+                    android:startColor="#A2DDA2"
+                    android:endColor="#E8F1E8"
+                    android:type="linear"
+                    android:angle="90" />
+            </vector>
+        </item>-->
+
+<!--    <item>
+        <shape>
+            <gradient
+                android:startColor="#0000FF"
+                android:endColor="#00FFFF"
+                android:type="linear"
+                android:angle="90" />
+        </shape>
+    </item>
+    <item>
+        <vector
+            android:width="400dp"
+            android:height="900dp"
+            android:viewportWidth="50"
+            android:viewportHeight="50"
+            android:angle="180">
+            <path
+                android:fillColor="#B3C34A4A"
+                android:pathData="M0,50 c 0,-25 50,-25 50,0 c 50,25 100,25 100,0 c 0,-25 -50,-25 -50,0 Z" />
+        </vector>
+     </item>-->
+
+</layer-list>
+
+

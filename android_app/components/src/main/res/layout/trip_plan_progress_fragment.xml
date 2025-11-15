@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--
+    &lt;!&ndash; Add VerticalProgressBar here &ndash;&gt;
+    <com.js_loop_enterprise_solutions.panav_biotech_erp.VerticalProgressBar
+        android:id="@+id/verticalProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        app:barWidth="10dp"
+        app:barHeight="300dp"
+        app:stepCount="15"
+        app:currentStep="5"/>
+-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/verticalProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+<!--        &lt;!&ndash; Add CardViews for each step &ndash;&gt;
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A15A5A">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Step 1" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A15A5A">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Step 2" />
+        </androidx.cardview.widget.CardView>-->
+
+        <!-- Add more CardViews for other steps -->
+
+    </LinearLayout>
+
+    <!--Button to go on next step-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NEXT" />
+
+</RelativeLayout>

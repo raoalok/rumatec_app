@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.panav_biotech" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/panav_biotech_green</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/blue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+        <item name="background">@color/white</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <!-- Bottom Navigation Style -->
+        <item name="bottomNavigationStyle">@style/MyBottomNavigationView</item>
+
+    </style>
+
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/background3</item>
+    </style>
+
+    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/transparent</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <color name="system_red">#F44336</color>
+    <color name="grey">#BEBABA</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_60">#4A000000</color>
+
+    <style name="ThemeOverlay.PanavBiotech.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>

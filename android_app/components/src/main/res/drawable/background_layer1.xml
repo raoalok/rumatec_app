@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background image or shape -->
+    <item android:drawable="@drawable/background1" />
+
+    <!-- Overlay color -->
+    <item android:id="@+id/color_overlay">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFD4D6DA" />
+        </shape>
+    </item>
+
+</layer-list>

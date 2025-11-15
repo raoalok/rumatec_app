@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_item">
+
+    <item
+        android:id="@+id/action_schedule_planning"
+        android:title="@string/product_list"
+        android:icon="@drawable/baseline_card_travel_24"
+        app:showAsAction="ifRoom|withText"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/action_update_quantity"
+        android:title="@string/inventory"
+        android:icon="@drawable/baseline_add_24"
+        app:showAsAction="ifRoom|withText"
+        android:checked="true"/>
+    <item
+        android:id="@+id/action_update_expense"
+        android:title="@string/expense"
+        android:icon="@drawable/baseline_attach_money_24"
+        app:showAsAction="ifRoom|withText"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/action_update_cnf"
+        android:title="@string/cnf"
+        android:visible="false"
+        android:icon="@drawable/baseline_warehouse_24"
+        app:showAsAction="ifRoom|withText"
+        android:checked="true"/>
+    <item
+        android:id="@+id/action_update_sales"
+        android:title="@string/sales"
+        android:visible="true"
+        android:icon="@drawable/baseline_delivery_dining_24"
+        app:showAsAction="ifRoom|withText"
+        android:checked="true"/>
+
+</menu>
