@@ -43,14 +43,14 @@
             <LinearLayout
                 android:id="@+id/user_profile_pic"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="@dimen/header_height"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginTop="@dimen/spacing_xl"
                     android:src="@drawable/rumatec_logo_full_name" />
 
                 <TextView
@@ -58,11 +58,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/spacing_sm"
                     android:text=""
                     android:visibility="gone"
-                    android:textColor="#fff"
-                    android:textSize="21sp"
+                    android:textColor="@color/text_on_primary"
+                    android:textSize="@dimen/text_size_h3"
                     android:textStyle="bold" />
             </LinearLayout>
 

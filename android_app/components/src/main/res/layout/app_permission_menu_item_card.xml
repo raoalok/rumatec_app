@@ -1,77 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--
+    MODERNIZED PERMISSION MENU ITEM - Material 3 Design
+    
+    Changes from original:
+    - Replaced CardView with MaterialCardView
+    - Removed custom border drawable, using card stroke instead
+    - Increased corner radius to 12dp
+    - Better spacing and padding using design tokens
+    - Improved icon sizing and positioning
+    - Cleaner typography with proper hierarchy
+    - Added ripple effect for better touch feedback
+    - Removed unnecessary nested layouts
+    - Better alignment using ConstraintLayout
+-->
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="20dp"
-    app:cardCornerRadius="8dp">
+    android:layout_marginStart="@dimen/spacing_md"
+    android:layout_marginEnd="@dimen/spacing_md"
+    android:layout_marginTop="@dimen/spacing_sm"
+    android:layout_marginBottom="@dimen/spacing_sm"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="@dimen/elevation_sm"
+    app:cardBackgroundColor="@color/surface"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/divider"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:minHeight="140dp"
-        android:gravity="center"
-        android:background="@drawable/drwable_minimal_border"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:minHeight="96dp"
+        android:padding="@dimen/spacing_md">
 
+        <!-- Permission Icon -->
+        <ImageView
+            android:id="@+id/app_tour_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/app_permission_required"
+            android:contentDescription="@string/app_permissions_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:src="@drawable/app_permission_required" />
+
+        <!-- Text Content Container -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_margin="5dp"
-            android:layout_marginEnd="30dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginEnd="@dimen/spacing_sm"
+            app:layout_constraintStart_toEndOf="@id/app_tour_image"
+            app:layout_constraintEnd_toStartOf="@id/chevron_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-            <ImageView
-                android:id="@+id/app_tour_image"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:adjustViewBounds="true"
-                android:layout_marginEnd="16dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/app_permission_required" />
-
-            <LinearLayout
-                android:layout_width="0dp"
+            <!-- Title -->
+            <TextView
+                android:id="@+id/permission_menu_title"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:text="@string/app_permissions_title"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_size_h4"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="App Permissions" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="App Permission"
-                    android:textColor="@color/black"
-                    android:maxLines="4"
-                    android:ellipsize="end"
-                    android:textSize="22sp" />
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Permissions required for the app to function properly."
-                    android:ellipsize="end"
-                    android:textColor="@color/black"
-                    android:visibility="visible"
-                    android:textSize="16sp" />
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="..."
-                    android:visibility="gone"
-                    android:ellipsize="end"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
+            <!-- Description -->
+            <TextView
+                android:id="@+id/permission_menu_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:text="@string/app_permissions_description"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_size_body2"
+                android:maxLines="3"
+                android:ellipsize="end"
+                tools:text="Permissions required for the app to function properly." />
 
         </LinearLayout>
 
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+        <!-- Chevron Icon -->
+        <ImageView
+            android:id="@+id/chevron_icon"
+            android:layout_width="@dimen/icon_size_md"
+            android:layout_height="@dimen/icon_size_md"
+            android:src="@drawable/ic_chevron_right"
+            android:contentDescription="@null"
+            app:tint="@color/text_tertiary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:src="@drawable/ic_chevron_right" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

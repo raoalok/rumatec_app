@@ -58,4 +58,21 @@
 
     <dimen name="divider_height">1dp</dimen>         <!-- Divider/Border -->
     <dimen name="stroke_width">2dp</dimen>           <!-- Border/Stroke Width -->
+    
+    <!-- Additional Component Dimensions -->
+    <dimen name="header_height">150dp</dimen>        <!-- Header Section Height -->
+    
+    <!-- Card Dimensions (Standardized) -->
+    <dimen name="card_margin_horizontal">16dp</dimen>  <!-- Standard horizontal card margin -->
+    <dimen name="card_margin_vertical">8dp</dimen>     <!-- Standard vertical card margin -->
+    <dimen name="card_padding_content">16dp</dimen>    <!-- Standard card content padding -->
+    <dimen name="card_corner_radius_standard">12dp</dimen> <!-- Standard card corner radius -->
+    <dimen name="card_elevation_standard">2dp</dimen>  <!-- Standard card elevation -->
+    
+    <!-- Content Spacing (Standardized) -->
+    <dimen name="content_padding_horizontal">16dp</dimen> <!-- Standard horizontal content padding -->
+    <dimen name="content_padding_vertical">16dp</dimen>   <!-- Standard vertical content padding -->
+    <dimen name="content_margin_small">8dp</dimen>        <!-- Small content margin -->
+    <dimen name="content_margin_medium">16dp</dimen>      <!-- Medium content margin -->
+    <dimen name="content_margin_large">24dp</dimen>       <!-- Large content margin -->
 </resources>

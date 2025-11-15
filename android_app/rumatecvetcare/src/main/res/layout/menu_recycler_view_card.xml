@@ -1,37 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--
+    Menu Grid Item Card - Standardized Layout
+    
+    Changes from original:
+    - CardView → MaterialCardView
+    - Hard-coded margins → Design tokens (compact style for grid)
+    - Hard-coded padding → Design tokens
+    - Hard-coded colors → Semantic tokens
+    - Hard-coded text sizes → Typography tokens
+    - Consistent with design system
+-->
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppCard.Compact"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="2dp"
-    app:cardBackgroundColor="@color/white">
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="@dimen/spacing_md"
+        android:gravity="center">
 
         <!-- Icon -->
         <ImageView
             android:id="@+id/item_icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/icon_size_xl"
+            android:layout_height="@dimen/icon_size_xl"
             android:src="@drawable/baseline_add_24"
-            android:contentDescription="Wardrobe Item Icon" />
+            android:contentDescription="@null"
+            app:tint="@color/primary"
+            tools:src="@drawable/baseline_add_24" />
 
         <!-- Text -->
         <TextView
             android:id="@+id/item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Category Name"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:gravity="center" />
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:textSize="@dimen/text_size_body2"
+            android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Category Name" />
+
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

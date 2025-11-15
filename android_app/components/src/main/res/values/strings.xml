@@ -32,4 +32,19 @@
     <string name="login_status">Login Status</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    
+    <!-- App Permissions Strings -->
+    <string name="app_permissions_title">App Permissions</string>
+    <string name="app_permissions_subtitle">Manage permissions required for app functionality</string>
+    <string name="app_permissions_description">Permissions required for the app to function properly.</string>
+    <string name="app_permissions_icon">App permissions icon</string>
+    <string name="permission_title_placeholder">Permission Name</string>
+    <string name="permission_status">Permission status</string>
+    
+    <!-- Common Action Strings -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="trip_info">Trip information</string>
 </resources>

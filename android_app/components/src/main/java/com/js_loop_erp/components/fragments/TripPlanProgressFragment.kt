@@ -13,6 +13,7 @@ import androidx.activity.addCallback
 import androidx.activity.findViewTreeOnBackPressedDispatcherOwner
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.textview.MaterialTextView
@@ -88,7 +89,7 @@ class TripPlanProgressFragment : DialogFragment() {
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
             linearLayout.gravity = Gravity.LEFT
-            linearLayout.setBackgroundColor(Color.GREEN)
+            linearLayout.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.success))
 
             val verticalBar = View(requireContext())
             val barParams = LinearLayout.LayoutParams(
@@ -96,7 +97,7 @@ class TripPlanProgressFragment : DialogFragment() {
                 LinearLayout.LayoutParams.MATCH_PARENT
             )
             verticalBar.layoutParams = barParams
-            verticalBar.setBackgroundColor(Color.BLACK) // Set the color of the vertical bar
+            verticalBar.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.text_primary))
             linearLayout.addView(verticalBar)
 
             // Create ImageView

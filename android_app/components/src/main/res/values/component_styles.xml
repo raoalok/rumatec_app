@@ -93,13 +93,16 @@
     <!-- CARD STYLES                                  -->
     <!-- ============================================ -->
 
-    <!-- Standard Card -->
+    <!-- Standard Card (Use this for all cards) -->
     <style name="AppCard" parent="Widget.MaterialComponents.CardView">
-        <item name="cardCornerRadius">@dimen/corner_radius_md</item>
-        <item name="cardElevation">@dimen/elevation_sm</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius_standard</item>
+        <item name="cardElevation">@dimen/card_elevation_standard</item>
         <item name="cardBackgroundColor">@color/surface</item>
-        <item name="contentPadding">@dimen/card_padding</item>
-        <item name="android:layout_margin">@dimen/spacing_sm</item>
+        <item name="contentPadding">@dimen/card_padding_content</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/card_margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/card_margin_vertical</item>
     </style>
 
     <!-- Elevated Card -->
@@ -112,6 +115,12 @@
         <item name="cardElevation">@dimen/elevation_none</item>
         <item name="strokeWidth">@dimen/divider_height</item>
         <item name="strokeColor">@color/divider</item>
+    </style>
+    
+    <!-- Compact Card (For grid layouts) -->
+    <style name="AppCard.Compact" parent="AppCard">
+        <item name="android:layout_margin">@dimen/spacing_xs</item>
+        <item name="contentPadding">@dimen/spacing_sm</item>
     </style>
 
     <!-- ============================================ -->
@@ -233,5 +242,40 @@
         <item name="android:padding">@dimen/spacing_sm</item>
         <item name="android:textSize">@dimen/text_size_body1</item>
         <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- ICON BUTTON STYLES                           -->
+    <!-- ============================================ -->
+
+    <!-- Standard Icon Button -->
+    <style name="AppButton.Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:minWidth">@dimen/touch_target_min</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconTint">@color/text_secondary</item>
+    </style>
+
+    <!-- Icon Button - Primary Color -->
+    <style name="AppButton.Icon.Primary" parent="AppButton.Icon">
+        <item name="iconTint">@color/primary</item>
+    </style>
+
+    <!-- Icon Button - Danger/Delete -->
+    <style name="AppButton.Icon.Danger" parent="AppButton.Icon">
+        <item name="iconTint">@color/error</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- SHAPE APPEARANCE STYLES                      -->
+    <!-- ============================================ -->
+
+    <!-- Circle Shape for ImageViews -->
+    <style name="ShapeAppearance.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>
