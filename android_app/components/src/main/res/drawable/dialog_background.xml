@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <bitmap
-            android:src="@drawable/panav_biotech_logo"
+            android:src="@drawable/logo_rumatec_vetcare"
             android:tileMode="disabled"
             android:gravity="center" />
     </item>

@@ -320,7 +320,7 @@
                                 android:layout_height="40dp"
                                 android:textSize="18sp"
                                 android:text="KMS:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:gravity="center_vertical"
                                 android:layout_gravity="center|center_vertical"
                                 android:hint="KMS:" />
@@ -338,7 +338,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="50dp"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:maxLength="9"
                             android:textSize="18sp" />
 

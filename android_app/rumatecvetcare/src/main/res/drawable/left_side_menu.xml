@@ -1,21 +1,21 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:viewportHeight="512" android:viewportWidth="512" android:width="24dp">
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M475.43,0h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57V36.57C512,16.37 495.63,0 475.43,0z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M475.43,0h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57V36.57C512,16.37 495.63,0 475.43,0z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M280.38,0h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57V36.57C316.95,16.37 300.58,0 280.38,0z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M280.38,0h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57V36.57C316.95,16.37 300.58,0 280.38,0z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M85.33,0H36.57C16.37,0 0,16.37 0,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57V36.57C121.9,16.37 105.53,0 85.33,0z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M85.33,0H36.57C16.37,0 0,16.37 0,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57V36.57C121.9,16.37 105.53,0 85.33,0z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M475.43,390.1h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76C495.63,512 512,495.63 512,475.43v-48.76C512,406.47 495.63,390.1 475.43,390.1z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M475.43,390.1h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76C495.63,512 512,495.63 512,475.43v-48.76C512,406.47 495.63,390.1 475.43,390.1z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M280.38,390.1h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C316.95,406.47 300.58,390.1 280.38,390.1z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M280.38,390.1h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C316.95,406.47 300.58,390.1 280.38,390.1z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M85.33,390.1H36.57C16.37,390.1 0,406.47 0,426.67v48.76C0,495.63 16.37,512 36.57,512h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C121.9,406.47 105.53,390.1 85.33,390.1z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M85.33,390.1H36.57C16.37,390.1 0,406.47 0,426.67v48.76C0,495.63 16.37,512 36.57,512h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C121.9,406.47 105.53,390.1 85.33,390.1z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M475.43,195.05h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C512,211.42 495.63,195.05 475.43,195.05z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M475.43,195.05h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C512,211.42 495.63,195.05 475.43,195.05z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M280.38,195.05h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C316.95,211.42 300.58,195.05 280.38,195.05z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M280.38,195.05h-48.76c-20.2,0 -36.57,16.37 -36.57,36.57v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C316.95,211.42 300.58,195.05 280.38,195.05z"/>
       
-    <path android:fillColor="@color/panav_biotech_green" android:pathData="M85.33,195.05H36.57C16.37,195.05 0,211.42 0,231.62v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C121.9,211.42 105.53,195.05 85.33,195.05z"/>
+    <path android:fillColor="@color/rumatec_vetcare_green" android:pathData="M85.33,195.05H36.57C16.37,195.05 0,211.42 0,231.62v48.76c0,20.2 16.37,36.57 36.57,36.57h48.76c20.2,0 36.57,-16.37 36.57,-36.57v-48.76C121.9,211.42 105.53,195.05 85.33,195.05z"/>
     
 </vector>

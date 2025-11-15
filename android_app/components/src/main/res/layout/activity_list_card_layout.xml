@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textSize="22sp" />
@@ -50,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calgain Plus Gel (300ml)"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textSize="15sp" />
@@ -67,7 +67,7 @@
                         android:text="Batch: "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <RelativeLayout
@@ -81,7 +81,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:layout_marginStart="6dp"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
                     </RelativeLayout>
 
@@ -92,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Exp Date: 23099090"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />-->
 
                 <TextView
@@ -100,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Exp Date: "
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
 

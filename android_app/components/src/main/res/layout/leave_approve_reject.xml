@@ -68,7 +68,7 @@
                                     android:layout_marginStart="10dp"
                                     android:text="Applied Leave:"
                                     android:layout_gravity="center_vertical"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="22sp" />
 
                                 <RelativeLayout
@@ -83,7 +83,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentEnd="true"
                                         android:gravity="center_vertical"                                        android:src="@drawable/baseline_add_box_24"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp" />
                                 </RelativeLayout>
 

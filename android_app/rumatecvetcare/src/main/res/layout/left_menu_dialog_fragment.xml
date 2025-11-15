@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="@color/surface_dark">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -72,7 +72,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#E0E0E0"
+        android:background="@color/gray_light"
         android:layout_marginBottom="16dp"/>
 
     <ScrollView

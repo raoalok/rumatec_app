@@ -48,7 +48,7 @@
                             android:maxLines="1"
                             android:layout_gravity="center_vertical"
                             android:text="Leave Details:"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="22sp" />
 
                         <RelativeLayout
@@ -86,7 +86,7 @@
                         android:layout_marginStart="0dp"
                         android:maxLines="3"
                         android:text="Date:"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
 
@@ -108,7 +108,7 @@
                         android:layout_marginStart="0dp"
                         android:maxLines="3"
                         android:text="Leave Type:"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
 

@@ -48,7 +48,7 @@
                                 android:maxLines="1"
                                 android:layout_gravity="center_vertical"
                                 android:text="Trip Details:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
                             <RelativeLayout
@@ -91,7 +91,7 @@
                             android:layout_marginStart="0dp"
                             android:maxLines="3"
                             android:text="Date:"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                     </LinearLayout>
@@ -111,7 +111,7 @@
                             android:layout_marginStart="0dp"
                             android:maxLines="3"
                             android:text="Start Place:"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -122,7 +122,7 @@
                             android:layout_marginStart="0dp"
                             android:maxLines="3"
                             android:text="End Place:"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <TextView
@@ -133,7 +133,7 @@
                             android:layout_marginStart="0dp"
                             android:maxLines="3"
                             android:text="Travel Mode:"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
 

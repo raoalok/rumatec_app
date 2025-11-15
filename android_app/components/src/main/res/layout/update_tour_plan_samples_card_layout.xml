@@ -37,7 +37,7 @@
                 android:maxLength="200"
                 android:maxLines="3"
                 android:text="Dr ABCcccccccccccccccddddddddddddccccccccccccccccccc"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -63,7 +63,7 @@
                     android:layout_height="40dp"
                     android:textSize="18sp"
                     android:text="QTY:"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:gravity="center_vertical"
                     android:layout_gravity="center|center_vertical"
                     android:hint="QTY:" />
@@ -81,7 +81,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="50dp"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:maxLength="9"
                 android:textSize="18sp" />
 

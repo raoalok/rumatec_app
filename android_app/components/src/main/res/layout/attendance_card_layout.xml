@@ -38,7 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calgain Plus Gel (300ml)"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="22sp" />
 
                 <TextView
@@ -46,7 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="HSN: 23099090"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Stock: 80"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <LinearLayout
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
                     android:text=" "
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="13sp" />
 
             </LinearLayout>
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Id: 9"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -102,7 +102,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="6dp"
                     android:text="Batch: R-284"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
             </RelativeLayout>

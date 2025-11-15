@@ -21,7 +21,7 @@
 
 </LinearLayout>
 
-<!--    <com.example.panav_biotech.fragments.CustomView
+<!--    <com.js_loop_erp.components.fragments.CustomView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/custom_view__"
         android:layout_width="200dp"
@@ -42,7 +42,7 @@
             android:textSize="30dp">
         </TextView>
 
-    </com.example.panav_biotech.fragments.CustomView>-->
+    </com.js_loop_erp.components.fragments.CustomView>-->
 
 
 
