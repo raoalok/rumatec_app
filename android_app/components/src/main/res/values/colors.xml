@@ -1,80 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- ============================================ -->
-    <!-- DESIGN TOKENS - Color Palette               -->
-    <!-- ============================================ -->
-
-    <!-- Primary Colors -->
-    <color name="color_primary">#011B10</color>           <!-- panav_biotech_green -->
-    <color name="color_primary_dark">#003300</color>
-    <color name="color_primary_light">#A5D6A7</color>
-    <color name="color_primary_variant">#056420</color>
-
-    <!-- Secondary Colors -->
-    <color name="color_secondary">#0288D1</color>         <!-- blue -->
-    <color name="color_secondary_dark">#005B9F</color>
-    <color name="color_secondary_light">#81D4FA</color>
-    <color name="color_secondary_variant">#FF039BE5</color>
-
-    <!-- Accent Colors -->
-    <color name="color_accent">#FF03DAC5</color>          <!-- teal -->
-    <color name="color_accent_variant">#FF018786</color>
-
-    <!-- Surface & Background -->
-    <color name="color_background">#FFFFFFFF</color>      <!-- white -->
-    <color name="color_surface">#FFFFFFFF</color>
-    <color name="color_surface_variant">#FFD4D6DA</color> <!-- light grey gradient start -->
-
-    <!-- Text Colors -->
-    <color name="color_on_primary">#FFFFFFFF</color>      <!-- text on primary -->
-    <color name="color_on_secondary">#FFFFFFFF</color>    <!-- text on secondary -->
-    <color name="color_on_background">#FF000000</color>   <!-- black -->
-    <color name="color_on_surface">#FF000000</color>
-    <color name="color_text_primary">#FF000000</color>
-    <color name="color_text_secondary">#BEBABA</color>    <!-- grey -->
-    <color name="color_text_disabled">#9EC3D2EC</color>
-
-    <!-- State Colors -->
-    <color name="color_error">#F44336</color>             <!-- system red -->
-    <color name="color_success">#8DFC6F</color>           <!-- green -->
-    <color name="color_warning">#DD763F</color>           <!-- orange -->
-    <color name="color_info">#0288D1</color>
-
-    <!-- UI Element Colors -->
-    <color name="color_border">#BEBABA</color>
-    <color name="color_divider">#E0E0E0</color>
-    <color name="color_selected">#056420</color>
-    <color name="color_unselected">#FFFFFF</color>
-    <color name="color_overlay_dark">#66000000</color>    <!-- 40% black -->
-    <color name="color_overlay_light">#4A000000</color>   <!-- 29% black -->
-
-    <!-- Gradient Colors -->
-    <color name="color_gradient_start">#4DD2FA</color>
-    <color name="color_gradient_end">#5DA7F5</color>
-    <color name="color_gradient_surface_start">#FFD4D6DA</color>
-    <color name="color_gradient_surface_end">#FFD1D6E4</color>
-
-    <!-- Special Purpose Colors -->
-    <color name="color_transparent">#00000000</color>
-    <color name="color_button_primary">#011B10</color>
-    <color name="color_button_secondary">#F57970</color>
-
-    <!-- Legacy color names (deprecated - use semantic names above) -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#8692f7</color>
     <color name="lavender">#E6E6FA</color>
     <color name="green">#8DFC6F</color>
-    <color name="rumatec_vetcare_green">#011B10</color>
+    <color name="panav_biotech_green">#011B10</color>
     <color name="startblue">#4DD2FA</color>
     <color name="endblue">#5DA7F5</color>
     <color name="lightgreen">#BFF6CE</color>
     <color name="graylight">#9EC3D2EC</color>
+
+
     <color name="green_dark">#003300</color>
     <color name="green_light">#A5D6A7</color>
     <color name="blue">#0288D1</color>
@@ -90,9 +33,5 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
-    <color name="system_red">#F44336</color>
-    <color name="grey">#BEBABA</color>
-    <color name="transparent">#00000000</color>
-    <color name="transparent_60">#4A000000</color>
 
 </resources>

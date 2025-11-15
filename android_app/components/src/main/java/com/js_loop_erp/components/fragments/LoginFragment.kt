@@ -68,7 +68,7 @@ class LoginFragment: DialogFragment()
             } else {
                 Toast.makeText(context, "Check Input parameters.", Toast.LENGTH_LONG).show()
                 //loginCheck("sunilsuwal22@gmail.com", "alok*2527" )
-                //loginCheck("rashi@rumatecvetcare.com", "rashi@123" )
+                //loginCheck("rashi@panavbiotech.com", "rashi@123" )
             }
 //            dialog!!.dismiss()
         }

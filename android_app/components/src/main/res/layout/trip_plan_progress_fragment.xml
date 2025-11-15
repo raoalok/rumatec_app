@@ -9,7 +9,7 @@
 
 <!--
     &lt;!&ndash; Add VerticalProgressBar here &ndash;&gt;
-    <com.js_loop_enterprise_solutions.rumatec_vetcare_erp.VerticalProgressBar
+    <com.js_loop_enterprise_solutions.panav_biotech_erp.VerticalProgressBar
         android:id="@+id/verticalProgressBar"
         android:layout_width="100dp"
         android:layout_height="600dp"

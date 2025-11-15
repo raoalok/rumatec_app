@@ -14,10 +14,10 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Rumatec Vetcare"
+rootProject.name = "Panav Biotech"
 //include(":app")
 include(":components")
-//include(":rumatec_vetcare")
+//include(":panav_biotech")
 include(":rumatecvetcare")
 include(":common_mediator")
 include(":mediator_common")

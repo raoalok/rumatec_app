@@ -70,7 +70,7 @@ import com.js_loop_erp.components.AlarmReceiver
 import com.js_loop_erp.components.ApplicationDb
 import com.js_loop_erp.components.FragmentActivityI
 import com.js_loop_erp.components.PermissionResolver
-import com.js_loop_erp.components.data_class.LoginResponseRumatec
+import com.js_loop_erp.components.data_class.LoginResponsePanav
 import com.js_loop_erp.components.fragments.ActionsViewModel
 import com.js_loop_erp.components.fragments.EmpLocationData
 import com.js_loop_erp.components.fragments.SaleInvoiceFragment
@@ -768,7 +768,7 @@ class MainActivity : AppCompatActivity(), FragmentActivityI, IOnMenuItemClickLis
         val gson = Gson()
         lifecycleScope.launch {
             try {
-                val user = gson.fromJson(message, LoginResponseRumatec::class.java)
+                val user = gson.fromJson(message, LoginResponsePanav::class.java)
 
                 if (user.token?.length!! > 7) {
                     Log.d(TAG, "storeLoginSuccessInSharedPreference:1 ${USER_TOKEN.length} ")

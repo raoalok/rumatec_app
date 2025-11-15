@@ -7,7 +7,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowNoTitle">false</item>
         <item name="android:titleTextColor">@color/white</item>
-        <item name="android:statusBarColor">@color/rumatec_vetcare_green</item>
+        <item name="android:statusBarColor">@color/panav_biotech_green</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
@@ -17,7 +17,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowNoTitle">false</item>
         <item name="android:titleTextColor">@color/white</item>
-        <item name="android:statusBarColor">@color/rumatec_vetcare_green</item>
+        <item name="android:statusBarColor">@color/panav_biotech_green</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
@@ -46,7 +46,7 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:titleTextColor">#816C6C</item>
-        <item name="android:statusBarColor">@color/rumatec_vetcare_green</item>
+        <item name="android:statusBarColor">@color/panav_biotech_green</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
@@ -103,8 +103,8 @@
     </style>
 
     <style name="MyTimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
-        <item name="android:textColor">@color/rumatec_vetcare_green</item>
-        <item name="colorAccent">@color/rumatec_vetcare_green</item>
+        <item name="android:textColor">@color/panav_biotech_green</item>
+        <item name="colorAccent">@color/panav_biotech_green</item>
     </style>
 
     <style name="MyCustomEditTextStyle" parent="Widget.AppCompat.EditText">
@@ -282,7 +282,7 @@
         <item name="cornerSize">50%</item>
     </style>
 
-    <style name="Widget.Theme.RumatecVetcare.ButtonBar.Fullscreen" parent="">
+    <style name="Widget.Theme.PanavBiotech.ButtonBar.Fullscreen" parent="">
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
@@ -300,132 +300,10 @@
         <item name="android:paddingBottom">20dp</item>
     </style>
 
-    <!-- ============================================ -->
-    <!-- STANDARDIZED COMPONENT STYLES               -->
-    <!-- Using Design Tokens                         -->
-    <!-- ============================================ -->
 
-    <!-- Button Styles -->
-    <style name="AppButton" parent="Widget.MaterialComponents.Button">
-        <item name="android:layout_height">@dimen/height_button</item>
-        <item name="android:textSize">@dimen/text_size_h6</item>
-        <item name="android:textColor">@color/color_on_primary</item>
-        <item name="backgroundTint">@color/color_button_primary</item>
-        <item name="cornerRadius">@dimen/corner_radius_xl</item>
-        <item name="android:paddingStart">@dimen/spacing_button_padding_horizontal</item>
-        <item name="android:paddingEnd">@dimen/spacing_button_padding_horizontal</item>
-        <item name="elevation">@dimen/elevation_sm</item>
-        <item name="android:minHeight">@dimen/touch_target_min</item>
-    </style>
+    android:textColorHighlight="@color/black"
+    android:textColorHint="@color/black"
 
-    <style name="AppButton.Primary">
-        <item name="backgroundTint">@color/color_button_primary</item>
-        <item name="android:textColor">@color/color_on_primary</item>
-    </style>
-
-    <style name="AppButton.Secondary">
-        <item name="backgroundTint">@color/color_button_secondary</item>
-        <item name="android:textColor">@color/color_on_primary</item>
-    </style>
-
-    <style name="AppButton.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="android:layout_height">@dimen/height_button</item>
-        <item name="android:textSize">@dimen/text_size_h6</item>
-        <item name="android:textColor">@color/color_primary</item>
-        <item name="strokeColor">@color/color_primary</item>
-        <item name="strokeWidth">@dimen/border_width_medium</item>
-        <item name="cornerRadius">@dimen/corner_radius_xl</item>
-        <item name="android:minHeight">@dimen/touch_target_min</item>
-    </style>
-
-    <!-- Card Styles -->
-    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
-        <item name="cardCornerRadius">@dimen/corner_radius_md</item>
-        <item name="cardElevation">@dimen/elevation_md</item>
-        <item name="android:layout_margin">@dimen/spacing_card_margin</item>
-        <item name="contentPadding">@dimen/spacing_card_padding</item>
-        <item name="cardBackgroundColor">@color/color_surface</item>
-    </style>
-
-    <style name="AppCard.Elevated">
-        <item name="cardElevation">@dimen/elevation_xl</item>
-    </style>
-
-    <!-- EditText/TextInputLayout Styles -->
-    <style name="AppEditText" parent="Widget.AppCompat.EditText">
-        <item name="android:layout_height">@dimen/height_input_field</item>
-        <item name="android:textSize">@dimen/text_size_body1</item>
-        <item name="android:textColor">@color/color_text_primary</item>
-        <item name="android:textColorHint">@color/color_text_secondary</item>
-        <item name="android:padding">@dimen/spacing_input_padding</item>
-        <item name="android:minHeight">@dimen/touch_target_min</item>
-    </style>
-
-    <style name="AppTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/color_primary</item>
-        <item name="boxStrokeWidth">@dimen/border_width_medium</item>
-        <item name="boxCornerRadiusTopStart">@dimen/corner_radius_xxl</item>
-        <item name="boxCornerRadiusTopEnd">@dimen/corner_radius_xxl</item>
-        <item name="boxCornerRadiusBottomStart">@dimen/corner_radius_xxl</item>
-        <item name="boxCornerRadiusBottomEnd">@dimen/corner_radius_xxl</item>
-        <item name="android:textColorHint">@color/color_text_secondary</item>
-        <item name="hintTextColor">@color/color_primary</item>
-    </style>
-
-    <!-- TextView Styles -->
-    <style name="AppText">
-        <item name="android:textColor">@color/color_text_primary</item>
-    </style>
-
-    <style name="AppText.H1">
-        <item name="android:textSize">@dimen/text_size_h1</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/color_text_primary</item>
-    </style>
-
-    <style name="AppText.H2">
-        <item name="android:textSize">@dimen/text_size_h2</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="AppText.H3">
-        <item name="android:textSize">@dimen/text_size_h3</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="AppText.H4">
-        <item name="android:textSize">@dimen/text_size_h4</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="AppText.Body1">
-        <item name="android:textSize">@dimen/text_size_body1</item>
-    </style>
-
-    <style name="AppText.Body2">
-        <item name="android:textSize">@dimen/text_size_body2</item>
-    </style>
-
-    <style name="AppText.Caption">
-        <item name="android:textSize">@dimen/text_size_caption</item>
-        <item name="android:textColor">@color/color_text_secondary</item>
-    </style>
-
-    <!-- Dialog Styles -->
-    <style name="AppDialog" parent="Theme.MaterialComponents.Light.Dialog">
-        <item name="android:windowBackground">@color/color_surface</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="cornerRadius">@dimen/dialog_corner_radius</item>
-        <item name="android:windowMinWidthMajor">90%</item>
-        <item name="android:windowMinWidthMinor">90%</item>
-    </style>
-
-    <!-- List Item Style -->
-    <style name="AppListItem">
-        <item name="android:minHeight">@dimen/height_list_item</item>
-        <item name="android:padding">@dimen/spacing_list_item_padding</item>
-        <item name="android:background">?attr/selectableItemBackground</item>
-    </style>
 
 </resources>
 
