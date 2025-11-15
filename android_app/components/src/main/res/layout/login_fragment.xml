@@ -13,59 +13,57 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
-        android:background="@color/white">
+        style="@style/AppCard.Elevated"
+        app:cardCornerRadius="@dimen/corner_radius_xxl"
+        android:background="@color/color_surface">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:padding="24dp"
+            android:padding="@dimen/spacing_card_padding"
             android:background="@drawable/custom_edittext">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:id="@+id/loginText"
-                android:textSize="36sp"
+                style="@style/AppText.H1"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/panav_biotech_green"/>
+                android:textColor="@color/color_primary"
+                android:contentDescription="Login screen title"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
                 android:id="@+id/username"
+                style="@style/AppEditText"
                 android:background="@drawable/custom_edittext"
-                android:layout_marginTop="40dp"
-                android:padding="8dp"
+                android:layout_marginTop="@dimen/spacing_xl"
                 android:hint="Username"
                 android:drawableLeft="@drawable/ic_baseline_person_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="@dimen/spacing_sm"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:contentDescription="Username input field"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
                 android:id="@+id/password"
+                style="@style/AppEditText"
                 android:background="@drawable/custom_edittext"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/spacing_lg"
                 android:inputType="textPassword"
-                android:padding="8dp"
                 android:hint="Password"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="@dimen/spacing_sm"
+                android:importantForAutofill="no"
+                android:contentDescription="Password input field"/>
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
                 android:text="Login"
                 android:id="@+id/loginButton"
-                android:textSize="18sp"
-                android:textColor="@color/white"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="@color/panav_biotech_green"
-                app:cornerRadius = "20dp"/>
+                style="@style/AppButton.Primary"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:contentDescription="Login button"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

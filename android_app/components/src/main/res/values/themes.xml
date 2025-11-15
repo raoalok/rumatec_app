@@ -1,41 +1,61 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- ============================================ -->
+    <!-- DESIGN TOKENS - Theme                       -->
+    <!-- ============================================ -->
+
+    <!-- Base application theme using design tokens -->
     <style name="Theme.panav_biotech" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryVariant">@color/panav_biotech_green</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/blue</item>
-        <!-- Status bar color. -->
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/color_error</item>
+
+        <!-- Status bar -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
-        <item name="actionBarStyle">@style/MyActionBar</item>
 
-        <item name="background">@color/white</item>
+        <!-- Action bar -->
+        <item name="actionBarStyle">@style/AppActionBar</item>
         <item name="android:windowActionBarOverlay">false</item>
-        <!-- Bottom Navigation Style -->
-        <item name="bottomNavigationStyle">@style/MyBottomNavigationView</item>
 
+        <!-- Bottom Navigation -->
+        <item name="bottomNavigationStyle">@style/AppBottomNavigationView</item>
     </style>
 
-    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+    <!-- Action Bar Style -->
+    <style name="AppActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@drawable/background3</item>
+        <item name="elevation">@dimen/elevation_md</item>
+        <item name="titleTextStyle">@style/AppActionBarTitle</item>
     </style>
 
-    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="itemIconTint">@color/transparent</item>
-        <item name="itemTextColor">@color/black</item>
-        <item name="android:background">@color/transparent</item>
+    <style name="AppActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
     </style>
 
-    <color name="system_red">#F44336</color>
-    <color name="grey">#BEBABA</color>
-    <color name="transparent">#00000000</color>
-    <color name="transparent_60">#4A000000</color>
+    <!-- Bottom Navigation Style -->
+    <style name="AppBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/color_transparent</item>
+        <item name="itemTextColor">@color/color_text_primary</item>
+        <item name="android:background">@color/color_transparent</item>
+        <item name="elevation">@dimen/elevation_md</item>
+    </style>
 
+    <!-- Legacy theme for backwards compatibility -->
     <style name="ThemeOverlay.PanavBiotech.FullscreenContainer" parent="">
         <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
         <item name="fullscreenTextColor">@color/light_blue_A200</item>

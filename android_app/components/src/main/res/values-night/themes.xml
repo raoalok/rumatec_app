@@ -1,5 +1,34 @@
 <resources>
+    <!-- ============================================ -->
+    <!-- DESIGN TOKENS - Dark Theme                  -->
+    <!-- ============================================ -->
 
+    <!-- Dark theme (optional - can be expanded later for full dark mode support) -->
+    <style name="Theme.panav_biotech" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/color_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+
+        <!-- Background & Surface (dark) -->
+        <item name="android:colorBackground">@color/color_text_primary</item>
+        <item name="colorSurface">@color/color_primary_dark</item>
+        <item name="colorOnSurface">@color/color_on_primary</item>
+        <item name="colorOnBackground">@color/color_on_primary</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/color_error</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- Legacy theme -->
     <style name="ThemeOverlay.PanavBiotech.FullscreenContainer" parent="">
         <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
         <item name="fullscreenTextColor">@color/light_blue_A400</item>
