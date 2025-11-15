@@ -10,8 +10,11 @@ Before proceeding with UI consistency work, ensure all legacy branding reference
 
 **Find and replace the following references:**
 - `panav_biotech` → `rumatec_vetcare`
-- `panav` → `rumatec`
-- `biotech` → `vetcare`
+- `panav` → `rumatec_vetcare`
+- `biotech` → `rumatec_vetcare`
+- `Panav Biotech` → `Rumatec Vetcare`
+- `Panav` → `RumatecVetcare`
+- `Biotech` → `RumatecVetcare`
 
 **Search locations:**
 - All source code files (`.kt`, `.java`)
