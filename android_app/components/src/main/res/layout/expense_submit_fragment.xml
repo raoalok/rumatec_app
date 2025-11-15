@@ -32,7 +32,7 @@
                 android:padding="12dp"
                 android:text="@string/expense_claim_form"
                 android:textAlignment="center"
-                android:textColor="@color/panav_biotech_green"
+                android:textColor="@color/rumatec_vetcare_green"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 

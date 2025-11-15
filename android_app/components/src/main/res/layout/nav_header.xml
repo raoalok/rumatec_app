@@ -22,12 +22,12 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/panav_biotech_logo" />
+        android:src="@drawable/rumatec_vetcare_logo" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/panav_biotech_green"/>
+        android:background="@color/rumatec_vetcare_green"/>
 
     <!-- Menu items -->
 <!--
