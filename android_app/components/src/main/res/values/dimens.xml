@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================ -->
+    <!-- DESIGN TOKENS - Dimensions                  -->
+    <!-- ============================================ -->
+
+    <!-- Spacing Scale -->
+    <!-- Use these for margins, paddings, and general spacing -->
+    <dimen name="spacing_none">0dp</dimen>
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    <dimen name="spacing_xxxl">64dp</dimen>
+
+    <!-- Component-specific spacing -->
+    <dimen name="spacing_card_padding">24dp</dimen>
+    <dimen name="spacing_card_margin">20dp</dimen>
+    <dimen name="spacing_list_item_padding">16dp</dimen>
+    <dimen name="spacing_button_padding_horizontal">40dp</dimen>
+    <dimen name="spacing_button_padding_vertical">20dp</dimen>
+    <dimen name="spacing_input_padding">8dp</dimen>
+
+    <!-- Typography Scale (Text Sizes) -->
+    <dimen name="text_size_h1">36sp</dimen>
+    <dimen name="text_size_h2">28sp</dimen>
+    <dimen name="text_size_h3">24sp</dimen>
+    <dimen name="text_size_h4">22sp</dimen>
+    <dimen name="text_size_h5">20sp</dimen>
+    <dimen name="text_size_h6">18sp</dimen>
+    <dimen name="text_size_body1">16sp</dimen>
+    <dimen name="text_size_body2">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+
+    <!-- Icon Sizes -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_xlarge">48dp</dimen>
+    <dimen name="icon_size_xxlarge">70dp</dimen>
+
+    <!-- Corner Radii -->
+    <dimen name="corner_radius_none">0dp</dimen>
+    <dimen name="corner_radius_sm">4dp</dimen>
+    <dimen name="corner_radius_md">8dp</dimen>
+    <dimen name="corner_radius_lg">16dp</dimen>
+    <dimen name="corner_radius_xl">20dp</dimen>
+    <dimen name="corner_radius_xxl">30dp</dimen>
+    <dimen name="corner_radius_round">50dp</dimen>
+
+    <!-- Elevation (for cards, buttons, etc.) -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_xl">12dp</dimen>
+    <dimen name="elevation_xxl">20dp</dimen>
+
+    <!-- Component Heights -->
+    <dimen name="height_button">60dp</dimen>
+    <dimen name="height_input_field">50dp</dimen>
+    <dimen name="height_toolbar">56dp</dimen>
+    <dimen name="height_bottom_nav">56dp</dimen>
+    <dimen name="height_list_item">72dp</dimen>
+    <dimen name="height_card_small">145dp</dimen>
+
+    <!-- Border/Stroke Widths -->
+    <dimen name="border_width_thin">1dp</dimen>
+    <dimen name="border_width_medium">2dp</dimen>
+    <dimen name="border_width_thick">4dp</dimen>
+
+    <!-- Touch Target Sizes (minimum 48dp for accessibility) -->
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="touch_target_comfortable">56dp</dimen>
+
+    <!-- Dialog Dimensions -->
+    <dimen name="dialog_corner_radius">30dp</dimen>
+    <dimen name="dialog_elevation">20dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+
+</resources>
