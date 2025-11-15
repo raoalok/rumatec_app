@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Typography Scale (Text Sizes) -->
+    <!-- Material Design Type Scale -->
+    <dimen name="text_size_h1">32sp</dimen>          <!-- Display/Headline 1 -->
+    <dimen name="text_size_h2">24sp</dimen>          <!-- Display/Headline 2 -->
+    <dimen name="text_size_h3">20sp</dimen>          <!-- Headline 3 -->
+    <dimen name="text_size_h4">18sp</dimen>          <!-- Headline 4 -->
+    <dimen name="text_size_body1">16sp</dimen>       <!-- Body 1 - Primary -->
+    <dimen name="text_size_body2">14sp</dimen>       <!-- Body 2 - Secondary -->
+    <dimen name="text_size_caption">12sp</dimen>     <!-- Caption/Small Text -->
+    <dimen name="text_size_button">14sp</dimen>      <!-- Button Text -->
+    <dimen name="text_size_overline">10sp</dimen>    <!-- Overline/Labels -->
+
+    <!-- Spacing Scale (Margins & Padding) -->
+    <!-- 4dp base unit for Material Design -->
+    <dimen name="spacing_xs">4dp</dimen>             <!-- Extra Small -->
+    <dimen name="spacing_sm">8dp</dimen>             <!-- Small -->
+    <dimen name="spacing_md">16dp</dimen>            <!-- Medium (Standard) -->
+    <dimen name="spacing_lg">24dp</dimen>            <!-- Large -->
+    <dimen name="spacing_xl">32dp</dimen>            <!-- Extra Large -->
+    <dimen name="spacing_xxl">48dp</dimen>           <!-- 2X Large -->
+
+    <!-- Corner Radii -->
+    <dimen name="corner_radius_none">0dp</dimen>     <!-- No Rounding -->
+    <dimen name="corner_radius_sm">4dp</dimen>       <!-- Small - Cards, chips -->
+    <dimen name="corner_radius_md">8dp</dimen>       <!-- Medium - Buttons -->
+    <dimen name="corner_radius_lg">16dp</dimen>      <!-- Large - Dialogs -->
+    <dimen name="corner_radius_xl">24dp</dimen>      <!-- Extra Large -->
+    <dimen name="corner_radius_pill">999dp</dimen>   <!-- Full Pill Shape -->
+
+    <!-- Elevation (Shadows) -->
+    <dimen name="elevation_none">0dp</dimen>         <!-- No Elevation -->
+    <dimen name="elevation_sm">2dp</dimen>           <!-- Small - Cards -->
+    <dimen name="elevation_md">4dp</dimen>           <!-- Medium - Buttons -->
+    <dimen name="elevation_lg">8dp</dimen>           <!-- Large - FAB -->
+    <dimen name="elevation_xl">16dp</dimen>          <!-- Extra Large - Dialogs -->
+
+    <!-- Touch Targets (Accessibility) -->
+    <dimen name="touch_target_min">48dp</dimen>      <!-- Minimum Touch Target -->
+    <dimen name="icon_size_sm">16dp</dimen>          <!-- Small Icons -->
+    <dimen name="icon_size_md">24dp</dimen>          <!-- Medium Icons (Standard) -->
+    <dimen name="icon_size_lg">32dp</dimen>          <!-- Large Icons -->
+    <dimen name="icon_size_xl">48dp</dimen>          <!-- Extra Large Icons -->
+
+    <!-- Component Specific Dimensions -->
+    <dimen name="button_height">48dp</dimen>         <!-- Standard Button Height -->
+    <dimen name="button_height_sm">36dp</dimen>      <!-- Small Button -->
+    <dimen name="button_padding_horizontal">16dp</dimen>
+    <dimen name="button_padding_vertical">12dp</dimen>
+
+    <dimen name="card_padding">16dp</dimen>          <!-- Card Content Padding -->
+    <dimen name="list_item_height">56dp</dimen>      <!-- Standard List Item -->
+    <dimen name="list_item_padding">16dp</dimen>
+
+    <dimen name="appbar_height">56dp</dimen>         <!-- App Bar/Toolbar -->
+    <dimen name="bottom_nav_height">56dp</dimen>     <!-- Bottom Navigation -->
+
+    <dimen name="divider_height">1dp</dimen>         <!-- Divider/Border -->
+    <dimen name="stroke_width">2dp</dimen>           <!-- Border/Stroke Width -->
+</resources>

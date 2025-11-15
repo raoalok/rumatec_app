@@ -2,7 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <stroke
-        android:width="2dp" android:color="@color/panav_biotech_green" />
+        android:width="2dp" android:color="@color/rumatec_vetcare_green" />
     <corners
         android:radius="30dp"/>
     <solid android:color="#BCFAAB"/>

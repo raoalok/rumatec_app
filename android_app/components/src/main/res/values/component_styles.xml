@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================ -->
+    <!-- BUTTON STYLES                                -->
+    <!-- ============================================ -->
+
+    <!-- Primary Button (Filled) -->
+    <style name="AppButton.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+        <item name="backgroundTint">@color/button_primary</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/corner_radius_md</item>
+        <item name="elevation">@dimen/elevation_sm</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <!-- Secondary Button (Outlined) -->
+    <style name="AppButton.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+        <item name="strokeColor">@color/button_primary</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+        <item name="android:textColor">@color/button_primary</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/corner_radius_md</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <!-- Text Button -->
+    <style name="AppButton.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/button_primary</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <!-- Small Button -->
+    <style name="AppButton.Small" parent="AppButton.Primary">
+        <item name="android:layout_height">@dimen/button_height_sm</item>
+        <item name="android:paddingStart">@dimen/spacing_sm</item>
+        <item name="android:paddingEnd">@dimen/spacing_sm</item>
+        <item name="android:textSize">@dimen/text_size_body2</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- TEXT INPUT FIELD STYLES                      -->
+    <!-- ============================================ -->
+
+    <!-- Standard Outlined Text Field -->
+    <style name="AppTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxStrokeWidth">@dimen/stroke_width</item>
+        <item name="boxStrokeErrorColor">@color/error</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="errorTextColor">@color/error</item>
+        <item name="cornerRadius">@dimen/corner_radius_sm</item>
+    </style>
+
+    <!-- Filled Text Field -->
+    <style name="AppTextInputLayout.Filled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxStrokeWidth">@dimen/stroke_width</item>
+        <item name="boxBackgroundColor">@color/surface_dark</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="errorTextColor">@color/error</item>
+    </style>
+
+    <!-- Edit Text Style -->
+    <style name="AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/text_size_body1</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+        <item name="android:padding">@dimen/spacing_sm</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- CARD STYLES                                  -->
+    <!-- ============================================ -->
+
+    <!-- Standard Card -->
+    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/corner_radius_md</item>
+        <item name="cardElevation">@dimen/elevation_sm</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+        <item name="android:layout_margin">@dimen/spacing_sm</item>
+    </style>
+
+    <!-- Elevated Card -->
+    <style name="AppCard.Elevated" parent="AppCard">
+        <item name="cardElevation">@dimen/elevation_md</item>
+    </style>
+
+    <!-- Flat Card (No Elevation) -->
+    <style name="AppCard.Flat" parent="AppCard">
+        <item name="cardElevation">@dimen/elevation_none</item>
+        <item name="strokeWidth">@dimen/divider_height</item>
+        <item name="strokeColor">@color/divider</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- DIALOG STYLES                                -->
+    <!-- ============================================ -->
+
+    <!-- Standard Dialog Theme -->
+    <style name="AppDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="cornerRadius">@dimen/corner_radius_lg</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+    </style>
+
+    <!-- Alert Dialog Style -->
+    <style name="AppDialog.Alert" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AppDialog.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AppDialog.Button.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AppDialog.Button.Neutral</item>
+    </style>
+
+    <!-- Dialog Button Styles -->
+    <style name="AppDialog.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+    </style>
+
+    <style name="AppDialog.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+    </style>
+
+    <style name="AppDialog.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- LIST ITEM STYLES                             -->
+    <!-- ============================================ -->
+
+    <!-- Standard List Item -->
+    <style name="AppListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:padding">@dimen/list_item_padding</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- CHIP STYLES                                  -->
+    <!-- ============================================ -->
+
+    <!-- Standard Chip -->
+    <style name="AppChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/surface_dark</item>
+        <item name="chipStrokeColor">@color/border</item>
+        <item name="chipStrokeWidth">@dimen/divider_height</item>
+        <item name="chipCornerRadius">@dimen/corner_radius_pill</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_size_body2</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- DIVIDER STYLE                                -->
+    <!-- ============================================ -->
+
+    <style name="AppDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- FLOATING ACTION BUTTON STYLES                -->
+    <!-- ============================================ -->
+
+    <style name="AppFAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="tint">@color/text_on_accent</item>
+        <item name="elevation">@dimen/elevation_lg</item>
+        <item name="android:layout_margin">@dimen/spacing_md</item>
+    </style>
+
+    <style name="AppFAB.Mini" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="tint">@color/text_on_accent</item>
+        <item name="elevation">@dimen/elevation_md</item>
+        <item name="fabSize">mini</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- TAB LAYOUT STYLES                            -->
+    <!-- ============================================ -->
+
+    <style name="AppTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabIndicatorHeight">@dimen/stroke_width</item>
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabTextColor">@color/text_secondary</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.Body2</item>
+        <item name="tabIndicatorFullWidth">false</item>
+    </style>
+
+    <!-- ============================================ -->
+    <!-- SPINNER/DROPDOWN STYLES                      -->
+    <!-- ============================================ -->
+
+    <style name="AppSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/spacing_sm</item>
+        <item name="android:textSize">@dimen/text_size_body1</item>
+        <item name="android:minHeight">@dimen/touch_target_min</item>
+    </style>
+</resources>

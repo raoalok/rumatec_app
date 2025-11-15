@@ -56,7 +56,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Meeting Details:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
 
@@ -74,7 +74,7 @@
                                     android:layout_marginStart="0dp"
                                     android:maxLines="3"
                                     android:text="Date:"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp" />
 
 
@@ -94,7 +94,7 @@
                                     android:layout_marginStart="0dp"
                                     android:maxLines="3"
                                     android:text="Start Place:"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp" />
 
                                 <TextView
@@ -105,7 +105,7 @@
                                     android:layout_marginStart="0dp"
                                     android:maxLines="3"
                                     android:text="End Place:"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp" />
 
                                 <TextView
@@ -116,7 +116,7 @@
                                     android:layout_marginStart="0dp"
                                     android:maxLines="3"
                                     android:text="Travel Mode:"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp" />
 
 
@@ -135,7 +135,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginStart="6dp"
                                 android:src="@drawable/info_square_svgrepo_com"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="18sp"
                                 android:visibility="visible" />
                         </RelativeLayout>
@@ -184,7 +184,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Doctor:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
 
@@ -253,7 +253,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Pet Shop:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
 
@@ -323,7 +323,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Hospital:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
 
@@ -393,7 +393,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Stockist:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
 
@@ -463,7 +463,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Institute:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
                             <LinearLayout

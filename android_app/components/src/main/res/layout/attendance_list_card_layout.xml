@@ -45,7 +45,7 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="Date"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="22sp" />
 
             <RelativeLayout
@@ -79,7 +79,7 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:text="Activity:"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
                 <View
@@ -94,7 +94,7 @@
                     android:maxLines="1"
                     android:maxLength="100"
                     android:text="Activity Name"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -110,7 +110,7 @@
                     android:ellipsize="end"
                     android:maxLength="100"
                     android:text="Route: "
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
                 <View
@@ -125,7 +125,7 @@
                     android:maxLines="1"
                     android:maxLength="100"
                     android:text="route 1"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -137,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exp Date: "
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:visibility="gone" />
         </LinearLayout>

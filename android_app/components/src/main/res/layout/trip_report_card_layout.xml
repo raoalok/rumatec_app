@@ -41,7 +41,7 @@
                         android:ellipsize="end"
                         android:maxLines="1"
                         android:text="Date:"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="22sp" />
 
                     <RelativeLayout
@@ -55,7 +55,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginStart="6dp"
                             android:src="@drawable/baseline_edit_24"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
                     </RelativeLayout>
 
@@ -81,7 +81,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="0dp"
                         android:text="Route: "
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <TextView
@@ -91,7 +91,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="0dp"
                         android:text="Start Place:"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
                     <TextView
@@ -101,7 +101,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="0dp"
                         android:text="End Place:"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="18sp" />
 
 
@@ -119,7 +119,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_marginStart="0dp"
                             android:text="Travel Mode:"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
                         <RelativeLayout
@@ -133,7 +133,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginStart="6dp"
                                 android:src="@drawable/baseline_delete_24"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:visibility="invisible"
                                 android:textSize="20sp" />
                         </RelativeLayout>

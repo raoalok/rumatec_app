@@ -1,37 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ============================================ -->
+    <!-- PRIMARY BRAND COLORS                         -->
+    <!-- ============================================ -->
+    <!-- Main brand color - Dark green -->
+    <color name="primary">#011B10</color>
+    <color name="primary_dark">#000F08</color>
+    <color name="primary_light">#023A20</color>
+
+    <!-- Legacy alias for compatibility -->
+    <color name="rumatec_vetcare_green">@color/primary</color>
+
+    <!-- ============================================ -->
+    <!-- SECONDARY COLORS                             -->
+    <!-- ============================================ -->
+    <color name="secondary">#0288D1</color>              <!-- Blue -->
+    <color name="secondary_dark">#005B9F</color>         <!-- Dark Blue -->
+    <color name="secondary_light">#81D4FA</color>        <!-- Light Blue -->
+
+    <!-- ============================================ -->
+    <!-- ACCENT COLORS                                -->
+    <!-- ============================================ -->
+    <color name="accent">#8DFC6F</color>                 <!-- Bright Green -->
+    <color name="accent_light">#BFF6CE</color>           <!-- Light Green -->
+
+    <!-- ============================================ -->
+    <!-- SEMANTIC COLORS                              -->
+    <!-- ============================================ -->
+    <color name="success">#056420</color>                <!-- Success State -->
+    <color name="warning">#DD763F</color>                <!-- Warning State -->
+    <color name="error">#D72822</color>                  <!-- Error State -->
+    <color name="info">#0288D1</color>                   <!-- Info State -->
+
+    <!-- ============================================ -->
+    <!-- NEUTRAL COLORS (Grayscale)                   -->
+    <!-- ============================================ -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_dark">#4D4D4D</color>
+    <color name="gray">#BEBABA</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="gray_lighter">#F5F5F5</color>
+
+    <!-- ============================================ -->
+    <!-- SURFACE & BACKGROUND COLORS                  -->
+    <!-- ============================================ -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_dark">#F5F5F5</color>
+
+    <!-- ============================================ -->
+    <!-- TEXT COLORS (ON SURFACES)                    -->
+    <!-- ============================================ -->
+    <color name="text_primary">#000000</color>           <!-- High Emphasis -->
+    <color name="text_secondary">#4D4D4D</color>         <!-- Medium Emphasis -->
+    <color name="text_tertiary">#BEBABA</color>          <!-- Low Emphasis/Disabled -->
+    <color name="text_on_primary">#FFFFFF</color>        <!-- Text on Primary Color -->
+    <color name="text_on_secondary">#FFFFFF</color>      <!-- Text on Secondary Color -->
+    <color name="text_on_accent">#000000</color>         <!-- Text on Accent Color -->
+
+    <!-- ============================================ -->
+    <!-- BUTTON COLORS                                -->
+    <!-- ============================================ -->
+    <color name="button_primary">@color/primary</color>
+    <color name="button_secondary">@color/secondary</color>
+    <color name="button_text">@color/white</color>
+    <color name="button_disabled">#BEBABA</color>
+
+    <!-- ============================================ -->
+    <!-- INTERACTIVE STATE COLORS                     -->
+    <!-- ============================================ -->
+    <color name="ripple_light">#20000000</color>         <!-- 12% Black -->
+    <color name="ripple_dark">#40000000</color>          <!-- 25% Black -->
+    <color name="overlay_light">#20000000</color>
+    <color name="overlay_dark">#66000000</color>         <!-- 40% Black -->
+
+    <!-- ============================================ -->
+    <!-- UTILITY COLORS                               -->
+    <!-- ============================================ -->
+    <color name="transparent">#00000000</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="border">#BEBABA</color>
+
+    <!-- ============================================ -->
+    <!-- LEGACY COLORS (For Backward Compatibility)   -->
+    <!-- Gradually migrate away from these            -->
+    <!-- ============================================ -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-
-    <color name="white">#FFFFFFFF</color>
     <color name="purple">#8692f7</color>
     <color name="lavender">#E6E6FA</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
     <color name="green">#8DFC6F</color>
-    <color name="panav_biotech_green">#011B10</color>
-    <color name="startblue">#4DD2FA</color>
-    <color name="endblue">#5DA7F5</color>
-    <color name="lightgreen">#BFF6CE</color>
-    <color name="graylight">#9EC3D2EC</color>
-
-
     <color name="green_dark">#003300</color>
     <color name="green_light">#A5D6A7</color>
+    <color name="lightgreen">#BFF6CE</color>
+
     <color name="blue">#0288D1</color>
     <color name="blue_dark">#005B9F</color>
     <color name="blue_light">#81D4FA</color>
+    <color name="startblue">#4DD2FA</color>
+    <color name="endblue">#5DA7F5</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+
+    <color name="graylight">#9EC3D2EC</color>
+    <color name="grey">@color/gray</color>
+
     <color name="selectedColor">#056420</color>
     <color name="unselectedColor">#FFFFFF</color>
     <color name="button">#F57970</color>
     <color name="background_color">#FD6B60</color>
     <color name="orange">#DD763F</color>
-    <color name="light_blue_600">#FF039BE5</color>
-    <color name="light_blue_900">#FF01579B</color>
-    <color name="light_blue_A200">#FF40C4FF</color>
-    <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
-
+    <color name="system_red">#F44336</color>
+    <color name="transparent_60">#4A000000</color>
 </resources>

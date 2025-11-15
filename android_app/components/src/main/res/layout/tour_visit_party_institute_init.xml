@@ -62,7 +62,7 @@
                                 android:ellipsize="end"
                                 android:maxLines="1"
                                 android:text="Institute:"
-                                android:textColor="#000000"
+                                android:textColor="@color/black"
                                 android:textSize="22sp" />
 
                             <RelativeLayout
@@ -76,7 +76,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentEnd="true"
                                     android:gravity="center_vertical"                                        android:src="@drawable/baseline_add_box_24"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp" />
                             </RelativeLayout>
 
@@ -117,7 +117,7 @@
                             android:maxLines="3"
                             android:layout_weight="6"
                             android:text=""
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="18sp" />
 
 
@@ -209,7 +209,7 @@
                                     android:maxLines="1"
                                     android:text="Companion:"
                                     android:layout_gravity="center_vertical"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="22sp" />
 
                                 <RelativeLayout
@@ -223,7 +223,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentEnd="true"
                                         android:gravity="center_vertical"                                        android:src="@drawable/baseline_add_box_24"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp" />
                                 </RelativeLayout>
 
@@ -295,7 +295,7 @@
                                     android:maxLines="1"
                                     android:text="Products:"
                                     android:layout_gravity="center_vertical"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="22sp" />
 
                                 <RelativeLayout
@@ -309,7 +309,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentEnd="true"
                                         android:gravity="center_vertical"                                        android:src="@drawable/baseline_add_box_24"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp" />
                                 </RelativeLayout>
 
@@ -382,7 +382,7 @@
                                     android:maxLines="1"
                                     android:text="Samples:"
                                     android:layout_gravity="center_vertical"
-                                    android:textColor="#000000"
+                                    android:textColor="@color/black"
                                     android:textSize="22sp" />
 
                                 <RelativeLayout
@@ -396,7 +396,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentEnd="true"
                                         android:gravity="center_vertical"                                        android:src="@drawable/baseline_add_box_24"
-                                        android:textColor="#000000"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp" />
                                 </RelativeLayout>
 

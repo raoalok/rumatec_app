@@ -38,7 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dr Sophie White"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textSize="22sp" />
@@ -50,7 +50,7 @@
                     android:text="₹: 23099090"
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -65,7 +65,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="6dp"
                     android:text="Batch: R-284"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:visibility="invisible"
                     android:textSize="14sp" />
 
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Stock: 80"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <LinearLayout
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
                     android:text=" "
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="13sp" />
 
             </LinearLayout>
@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Id: 9"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -132,7 +132,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="6dp"
                     android:text="Batch: R-284"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:visibility="invisible"
                     android:textSize="14sp" />
 

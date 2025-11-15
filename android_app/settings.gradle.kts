@@ -17,7 +17,7 @@ dependencyResolutionManagement {
 rootProject.name = "Panav Biotech"
 //include(":app")
 include(":components")
-//include(":panav_biotech")
+//include(":rumatec_vetcare_biotech")
 include(":rumatecvetcare")
 include(":common_mediator")
 include(":mediator_common")
