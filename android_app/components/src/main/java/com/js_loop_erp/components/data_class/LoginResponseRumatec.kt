@@ -1,6 +1,6 @@
 package com.js_loop_erp.components.data_class
 
-data class LoginResponsePanav(
+data class LoginResponseRumatec(
     val token: String? = "",
     val user: User? = User(),
     val permissions: List<Any>? = null,

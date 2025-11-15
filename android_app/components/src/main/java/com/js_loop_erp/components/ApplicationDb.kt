@@ -6,7 +6,7 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
-import com.js_loop_erp.components.data_class.LoginResponsePanav
+import com.js_loop_erp.components.data_class.LoginResponseRumatec
 import com.js_loop_erp.components.data_class.Permission
 import com.js_loop_erp.components.data_class.User
 import com.js_loop_erp.components.fragments.EmpLocationData
@@ -167,7 +167,7 @@ class ApplicationDb(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, 
         }
     }
 
-    fun insertLoginData(data: LoginResponsePanav) {
+    fun insertLoginData(data: LoginResponseRumatec) {
         val db = this.writableDatabase
 
         // Insert user data
@@ -326,7 +326,7 @@ class ApplicationDb(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, 
     }
 
 
-    fun getLoginData(): LoginResponsePanav? {
+    fun getLoginData(): LoginResponseRumatec? {
         val db = this.readableDatabase
 
         var user: User? = null
@@ -489,7 +489,7 @@ class ApplicationDb(context: Context): SQLiteOpenHelper(context, DATABASE_NAME, 
         db.close()
 
         return if (user != null && permissions != null && token != null) {
-            LoginResponsePanav(
+            LoginResponseRumatec(
                 user = user,
                 userPermissions = permissions,
                 token = token
